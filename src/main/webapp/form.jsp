@@ -8,26 +8,75 @@
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <html>
 <head>
-    <title>Title</title>
+    <title>1. 폼 입력 페이지</title>
+
+    <style>
+        body{
+            margin: 10px;
+        }
+
+        h2{
+            margin-bottom: 20px;
+        }
+
+        label{
+            font-weight: bold;
+        }
+        input{
+            padding: 8px;
+            width: 250px;
+            border: 1px solid cornflowerblue;
+            border-radius: 3px;
+
+            margin-bottom: 10px;
+        }
+
+        button{
+            padding: 10px 20px;
+            background: lightskyblue;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+
+        button:hover{
+            background: cornflowerblue;
+        }
+
+        a:link, a:visited{
+            color: black;
+        }
+        a:hover{
+            color: cornflowerblue;
+        }
+    </style>
+
 
 </head>
 <body>
-<form class="form-signin" action="form_ok.jsp" method="post">
-    <img class="mb-4" src="/docs/4.6/assets/brand/bootstrap-solid.svg" alt="" width="72" height="72">
-    <h1 class="h3 mb-3 font-weight-normal">Please sign in</h1>
-    <label for="inputEmail" class="sr-only">Email address</label>
-    <input name="email" type="email" id="inputEmail" class="form-control" placeholder="Email address" required autofocus>
-    <label for="inputPassword" class="sr-only">Password</label>
-    <input name="password" type="password" id="inputPassword" class="form-control" placeholder="Password" required>
-    <div class="checkbox mb-3">
-        <label>
-            <input type="checkbox" value="remember-me"> Remember me
-        </label>
-    </div>
-    <button class="btn btn-lg btn-primary btn-block" type="submit">Sign in</button>
-    <p class="mt-5 mb-3 text-muted">&copy; 2017-2024</p>
-    <input type="checkbox" name="" value=""> is check
+
+<h2>form <-> form_ok.jsp 데이터 주고 받기</h2>
+<form action="form_ok.jsp" method="post">
+    <label for="student_name">이름: </label>
+    <input id="student_name" name="student_name"> <br>
+
+    <label for="student_id">학번: </label>
+    <input id="student_id" name="student_id"> <br>
+
+    <label for="student_age">나이: </label>
+    <input id="student_age" name="student_age"> <br>
+
+    <label for="student_major">전공: </label>
+    <input id="student_major" name="student_major"> <br>
+
+    <label for="student_session">학기 수: </label>
+    <input id="student_session" name="student_session"> <br> <br>
+
+    <button type="submit">데이터 전송</button>
 </form>
+
+<a href="index.jsp"> ← 메인 페이지로 이동</a>
 
 </body>
 </html>
