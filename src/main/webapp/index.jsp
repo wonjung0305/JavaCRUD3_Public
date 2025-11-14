@@ -50,6 +50,6 @@
 <body>
 <h1><%= "22200145 김원중 과제 페이지" %></h1>
 <h3><%= "1번. form.jsp 데이터 주고 받기" %></h3>
-<a href="form.jsp">form 페이지로 이동하기</a>
+<a href="form.jsp">form 페이지로 이동</a>
 </body>
 </html>
