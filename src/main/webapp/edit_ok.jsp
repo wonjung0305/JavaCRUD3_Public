@@ -63,7 +63,7 @@
   <span class="label">학번:</span>  <%= id %> <br>
   <span class="label">나이:</span>  <%= age %> <br>
   <span class="label">전공:</span>  <%= major %> <br>
-  <span class="label">학기 수:</span> <%= studentSession %>><br>
+  <span class="label">학기 수:</span> <%= studentSession %><br>
 </div>
 
 <a href="list.jsp"> ← 목록으로 이동</a>
