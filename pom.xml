@@ -4,10 +4,10 @@
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
 
-    <groupId>com.example</groupId>
-    <artifactId>JavaCRUD3</artifactId>
+    <groupId>com.exmaple</groupId>
+    <artifactId>project2-1-wilson-0302</artifactId>
     <version>1.0-SNAPSHOT</version>
-    <name>JavaCRUD3</name>
+    <name>project2-1-wilson-0302</name>
     <packaging>war</packaging>
 
     <properties>
@@ -39,18 +39,11 @@
     </dependencies>
 
     <build>
-        <finalName>ROOT</finalName>
-
         <plugins>
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-war-plugin</artifactId>
                 <version>3.3.2</version>
-                <configuration>
-                    <failOnMissingWebXml>false</failOnMissingWebXml>
-                    <warSourceDirectory>src/main/webapp</warSourceDirectory>
-                    <outputDirectory>${project.build.directory}</outputDirectory>
-                </configuration>
             </plugin>
         </plugins>
     </build>
