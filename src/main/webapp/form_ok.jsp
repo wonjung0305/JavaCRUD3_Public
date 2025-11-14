@@ -70,7 +70,7 @@
 전공: <%= major %> <br>
 학기수: <%= stu_session %> <br> <br>
 
-<a href="form.jsp"> ← 입력 폼으로 돌아가기 </a> <br>
+<a href="form.jsp"> ← 입력 폼으로 이동 </a> <br>
 
 
 </body>
