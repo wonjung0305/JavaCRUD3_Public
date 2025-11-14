@@ -62,6 +62,12 @@
         }
     </style>
 
+    <script>
+        window.onload = function(){
+            alert("등록되었습니다.");
+        }
+    </script>
+
 </head>
 <body>
 이름: <%= name %> <br>
