@@ -57,7 +57,7 @@
             margin-bottom: 20px;
         }
         .edit-btn:hover{
-            background: blue;
+            background: cornflowerblue;
         }
     </style>
 </head>
