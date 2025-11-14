@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>정보 등록 페이지</title>
+
+    <style>
+        body{
+            margin:40px;
+        }
+        h2{
+            color: black;
+        }
+
+        label{
+            display: block;
+            margin-top: 12px;
+
+            font-weight: bold;
+        }
+
+        input{
+            width: 300px;
+            padding: 8px;
+
+            border: 1px solid #aaa;
+            border-radius: 4px;
+
+            margin-top: 4px;
+        }
+
+        .sub-btn{
+            margin-top: 10px;
+            padding: 10px 20px;
+
+            background: yellowgreen;
+            color: white;
+
+            border: none;
+            border-radius: 4px;
+
+            cursor: pointer;
+        }
+        .sub-btn:hover{
+            background: green;
+        }
+
+        a{
+            color: #1976D2;
+            text-decoration: none;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+
+<h2>학생 정보 등록</h2>
+
+<form action="write_ok.jsp" method="post">
+    <label for="student_name">이름: </label>
+    <input id="student_name" name="student_name" type="text" required> <br>
+
+    <label for="student_id">학번: </label>
+    <input id="student_id" name="student_id" type="text" required> <br>
+
+    <label for="student_age">나이: </label>
+    <input id="student_age" name="student_age" type="number" required> <br>
+
+    <label for="student_major">전공: </label>
+    <input id="student_major" name="student_major" type="text" required> <br>
+
+    <label for="student_session">학기 수: </label>
+    <input id="student_session" name="student_session" type="number" required> <br> <br>
+
+    <button type="submit" class="sub-btn">데이터 전송</button>
+</form>
+
+<a href="list.jsp"> ← 목록으로 이동</a>
+
+</body>
+</html>
