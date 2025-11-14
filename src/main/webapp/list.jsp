@@ -98,7 +98,7 @@
             cursor:pointer;
         }
         .edit-btn:hover{
-            background: blue;
+            background: cornflowerblue;
         }
 
         .view-point{
