@@ -48,6 +48,12 @@
       text-decoration: underline;
     }
   </style>
+
+  <script>
+    window.onload = function(){
+      alert("등록되었습니다.");
+    }
+  </script>
 </head>
 <body>
 <h2>학생 정보 등록 결과</h2>
