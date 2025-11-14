@@ -7,18 +7,71 @@
 --%>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <%
-  // email, password
-  String email = request.getParameter("email");
-  String password = request.getParameter("password");
+    request.setCharacterEncoding("UTF-8"); // 한국어 깨짐 방지
+
+  String name = request.getParameter("student_name");
+  String id = request.getParameter("student_id");
+  String age = request.getParameter("student_age");
+  String major = request.getParameter("student_major");
+  String stu_session = request.getParameter("student_session");
+
 %>
 <html>
 <head>
-    <title>Title</title>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+    <title>입력 결과</title>
+
+    <style>
+        body{
+            margin: 10px;
+        }
+
+        h2{
+            margin-bottom: 20px;
+        }
+
+        label{
+            font-weight: bold;
+        }
+        input{
+            padding: 8px;
+            width: 250px;
+            border: 1px solid cornflowerblue;
+            border-radius: 3px;
+
+            margin-bottom: 10px;
+        }
+
+        button{
+            padding: 10px 20px;
+            background: lightskyblue;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+
+        button:hover{
+            background: cornflowerblue;
+        }
+
+        a:link, a:visited{
+            color: black;
+        }
+        a:hover{
+            color: cornflowerblue;
+        }
+    </style>
+
 </head>
 <body>
-이메일: <%=email %>
-비밀번호: <%=email %> <!-- ${param.password}>
+이름: <%= name %> <br>
+학번: <%= id %> <br>
+나이: <%= age %> <br>
+전공: <%= major %> <br>
+학기수: <%= stu_session %> <br> <br>
+
+<a href="form.jsp"> ← 입력 폼으로 돌아가기 </a> <br>
+
 
 </body>
 </html>
